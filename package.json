@@ -22,7 +22,6 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-image-rotate": "*",
     "@react-native-community/image-editor": "*"
   },
   "devDependencies": {

@@ -23,7 +23,7 @@ export type AmazingCropperProps = {
 } & typeof defaultProps;
 
 const defaultProps = {
-  footerComponent: <DefaultFooter doneText='DONE' rotateText='ROTATE' cancelText='CANCEL' />,
+  footerComponent: <DefaultFooter doneText='DONE' cancelText='CANCEL' />,
   onDone: (_croppedImageUri: string) => {},
   onError: (_err: Error) => {},
   onCancel: () => {},
