@@ -688,7 +688,7 @@ class CropperPage extends Component<CropperPageProps, State> {
       resizeMode: 'stretch',
     } as ImageCropData;
     ImageEditor.cropImage(this.props.imageUri, cropData)
-      .then((croppedUri) => {
+      .then(croppedUri => {
         this.props.onDone(croppedUri);
       })
       .catch((err: Error) => {
@@ -749,10 +749,10 @@ class CropperPage extends Component<CropperPageProps, State> {
         bottomRightPanResponder={this.state.bottomRightPanResponder}
         topRightPanResponder={this.state.topRightPanResponder}
         rectanglePanResponder={this.state.rectanglePanResponder}
-        topOuterRef={(ref) => (this.topOuter = ref)}
-        leftOuterRef={(ref) => (this.leftOuter = ref)}
-        bottomOuterRef={(ref) => (this.bottomOuter = ref)}
-        rightOuterRef={(ref) => (this.rightOuter = ref)}
+        topOuterRef={ref => (this.topOuter = ref)}
+        leftOuterRef={ref => (this.leftOuter = ref)}
+        bottomOuterRef={ref => (this.bottomOuter = ref)}
+        rightOuterRef={ref => (this.rightOuter = ref)}
         COMPONENT_WIDTH={this.props.COMPONENT_WIDTH}
         COMPONENT_HEIGHT={this.props.COMPONENT_HEIGHT}
         W={this.W}
